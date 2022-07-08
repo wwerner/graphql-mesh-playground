@@ -1,0 +1,31 @@
+sources:
+  - name: DeepL yml
+    handler:
+      newOpenapi:
+        oasFilePath: ./deepl.oas.json
+    # - name: DeepL sanitized
+    # handler:
+    #   newOpenapi:
+    #     oasFilePath: ./deepl.sanitized.yml
+  
+  # - name: DeepL
+  #   handler:
+  #     newOpenapi:
+  #       oasFilePath: https://raw.githubusercontent.com/DeepLcom/openapi/main/openapi.json 
+  # - name: DeepL old
+  #   handler:
+  #     openapi:
+  #       source: https://raw.githubusercontent.com/DeepLcom/openapi/main/openapi.json 
+  # - name: Jira sanitized
+  #   handler:
+  #     newOpenapi:
+  #       oasFilePath: ./jira.sanitized.yml
+  # - name: Jira new
+  #   handler:
+  #     newOpenapi:
+  #       oasFilePath: https://developer.atlassian.com/cloud/jira/platform/swagger-v3.v3.json
+  # - name: Jira old
+  #   handler:
+  #     openapi:
+  #       source: https://developer.atlassian.com/cloud/jira/platform/swagger-v3.v3.json
+
