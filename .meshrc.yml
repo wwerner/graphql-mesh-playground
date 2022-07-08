@@ -1,8 +1,9 @@
 sources:
-  - name: DeepL yml
-    handler:
-      newOpenapi:
-        oasFilePath: ./deepl.oas.json
+  # - name: DeepL
+  #   handler:
+  #     newOpenapi:
+  #       fallbackFormat:  json
+  #       oasFilePath: ./deepl.oas.json
     # - name: DeepL sanitized
     # handler:
     #   newOpenapi:
@@ -12,10 +13,14 @@ sources:
   #   handler:
   #     newOpenapi:
   #       oasFilePath: https://raw.githubusercontent.com/DeepLcom/openapi/main/openapi.json 
-  # - name: DeepL old
-  #   handler:
-  #     openapi:
-  #       source: https://raw.githubusercontent.com/DeepLcom/openapi/main/openapi.json 
+  - name: DeepL old
+    handler:
+      openapi:
+        operationHeaders:
+          Authorization: DeepL-Auth-Key d5bede0e-5731-01cc-b2d2-dbb2094a9a17:fx
+        includeHttpDetails: true
+        provideErrorExtensions: true
+        source: ./deepl.oas.json
   # - name: Jira sanitized
   #   handler:
   #     newOpenapi:

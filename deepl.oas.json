@@ -18,10 +18,6 @@
     {
       "url": "https://api-free.deepl.com/v2",
       "description": "DeepL API Free"
-    },
-    {
-      "url": "https://api.deepl.com/v2",
-      "description": "DeepL API Pro"
     }
   ],
   "tags": [
